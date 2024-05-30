@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="1864.885496183206" y="-34.507042253521128"/>
         </scene>
-        <!--View Controller-->
+        <!--Mbti View Controller-->
         <scene sceneID="OEx-8a-TeV">
             <objects>
-                <viewController id="ZqF-7o-6XC" sceneMemberID="viewController">
+                <viewController id="ZqF-7o-6XC" customClass="mbtiViewController" customModule="myProfile" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nW9-Su-mZL">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -159,15 +159,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uhv-3z-PG6">
+                                <rect key="frame" x="46" y="291" width="301" height="325"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="긴말 필요 없이 짤로 볼까요?! 🤭" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wIb-JP-Zmx">
+                                <rect key="frame" x="31" y="233" width="330" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XZx-Bc-eHn">
+                                <rect key="frame" x="137" y="682" width="119" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" systemColor="systemPinkColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Tap!!"/>
+                                <connections>
+                                    <action selector="didMyTapBtn:" destination="ZqF-7o-6XC" eventType="touchUpInside" id="9R0-jr-bIp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="y7H-0L-Coa"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="85i-tv-Kad"/>
+                    <connections>
+                        <outlet property="inpfImages" destination="Uhv-3z-PG6" id="b6c-OB-KTy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Q9-RG-eGH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2718" y="-568"/>
+            <point key="canvasLocation" x="2716.7938931297708" y="-568.30985915492965"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="V5a-NP-Va5">
